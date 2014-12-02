@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subway Stories</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="background-color: #85ADAD">
+  <div id="top">
+    <a href="/posts/new" id="first">Make a post!</a>
+  </div>
+  <div id="rules">
+    <ul>
+      <li>Post about NYC subway stories</li>
+      <li>Make sure you enter a valid train line</li>
+    </ul>
+  </div>
+  <div>
+  <%= yield %>
+  </div>
+  <a href="/">Home</a>
+</body>
+
+</html>
